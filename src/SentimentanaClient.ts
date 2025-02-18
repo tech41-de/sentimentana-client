@@ -1,4 +1,4 @@
-import { Job } from "./Types";
+import { Job } from "./index";
 
 export class SentimentanaClient {
   serviceUrl = "";
