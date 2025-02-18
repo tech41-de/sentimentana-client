@@ -6,4 +6,18 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    dependencies:
+      sentimentana-client:
+        specifier: github:tech41-de/sentimentana-client
+        version: https://codeload.github.com/tech41-de/sentimentana-client/tar.gz/0d1a19de92fa23518089639b523f1cfad45a407f
+
+packages:
+
+  sentimentana-client@https://codeload.github.com/tech41-de/sentimentana-client/tar.gz/0d1a19de92fa23518089639b523f1cfad45a407f:
+    resolution: {tarball: https://codeload.github.com/tech41-de/sentimentana-client/tar.gz/0d1a19de92fa23518089639b523f1cfad45a407f}
+    version: 0.0.2
+
+snapshots:
+
+  sentimentana-client@https://codeload.github.com/tech41-de/sentimentana-client/tar.gz/0d1a19de92fa23518089639b523f1cfad45a407f: {}
