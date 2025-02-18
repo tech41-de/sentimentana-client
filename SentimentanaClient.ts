@@ -4,16 +4,26 @@ export class SentimentanaClient {
   serviceUrl = "";
   appId = "";
   appSecret = "";
-
+  _isConnected = false;
   constructor(url: string, appId: string, appSecret: string) {
     this.serviceUrl = url;
     this.appId = appId;
     this.appSecret = appSecret;
   }
 
-  connect() {}
+  isConnected(): boolean {
+    return this._isConnected;
+  }
 
-  disconnect() {}
+  connect() {
+    this._isConnected = true;
+    console.log("conencting");
+  }
+
+  disconnect() {
+    this._isConnected = false;
+    console.log("disconnect");
+  }
 
   async setJob(job: Job): Promise<string> {
     return "OK";
