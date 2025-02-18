@@ -43,7 +43,7 @@ export type Task = {
 export type Registry = {
   setJob(job: Job): void;
   setStatus(jobId: string, status: string): void;
-  getStatus(jobId): string;
+  getStatus(jobId: string): string;
   getJob(jobId: string): Job;
   delete(jobId: string): void;
 };

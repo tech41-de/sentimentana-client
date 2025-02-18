@@ -5,6 +5,7 @@ export class SentimentanaClient {
   appId = "";
   appSecret = "";
   _isConnected = false;
+  
   constructor(url: string, appId: string, appSecret: string) {
     this.serviceUrl = url;
     this.appId = appId;
