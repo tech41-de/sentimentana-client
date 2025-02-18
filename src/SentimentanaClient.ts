@@ -1,4 +1,4 @@
-import { Job } from "./index";
+import type { Job } from "./index.d.ts";
 
 export class SentimentanaClient {
   serviceUrl = "";
@@ -26,22 +26,27 @@ export class SentimentanaClient {
   }
 
   async setJob(job: Job): Promise<string> {
+    console.log(job);
     return "OK";
   }
 
   async setStatus(jobId: string, status: string): Promise<string> {
+    console.log(jobId, status);
     return "OK";
   }
 
-  async getStatus(jobId): Promise<string> {
+  async getStatus(jobId: string): Promise<string> {
+    console.log(jobId);
     return "UNKNOWN";
   }
 
   async getJob(jobId: string): Promise<Job> {
+    console.log(jobId);
     return {} as Job;
   }
 
   async delete(jobId: string): Promise<string> {
+    console.log(jobId);
     return "OK";
   }
 }

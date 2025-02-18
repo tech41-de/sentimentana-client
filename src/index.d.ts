@@ -20,7 +20,7 @@ export type Tool = {
   name: string;
   description: string;
   parameters: {
-    type: {};
+    type: any;
     properties: {
       string: { string: string };
     };
