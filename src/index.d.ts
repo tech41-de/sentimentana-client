@@ -59,7 +59,8 @@ export type Agent = {
 };
 
 export type Job = {
-  pubKey: string;
+  projectId:string;
+  jobId: string;
   name: string;
   agents: Agent[];
   tasks: Task[];
